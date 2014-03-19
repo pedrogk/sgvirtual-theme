@@ -84,8 +84,8 @@ function sgvirtual_preprocess_page(&$vars) {
  * Add Google Fonts.
  */
 function sgvirtual_preprocess_html(&$variables) {
-  drupal_add_css('http://fonts.googleapis.com/css?family=Vollkorn', array('type' => 'external'));
-  drupal_add_css('http://fonts.googleapis.com/css?family=Dancing+Script', array('type' => 'external'));
+  drupal_add_css('http://fonts.googleapis.com/css?family=Lato:300', array('type' => 'external'));
+  drupal_add_css('http://fonts.googleapis.com/css?family=Open+Sans', array('type' => 'external'));
 }
 
 /**
