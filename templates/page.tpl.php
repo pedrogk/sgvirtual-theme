@@ -137,7 +137,7 @@
     <?php endif; ?>
     <div class="content-sidebar-wrap">
     <div id="content">
-      <?php if (theme_get_setting('breadcrumbs', 'responsive_green')): ?><div id="breadcrumbs"><?php if ($breadcrumb): print $breadcrumb; endif;?></div><?php endif; ?>
+      <?php if (theme_get_setting('breadcrumbs', 'sgvirtual')): ?><div id="breadcrumbs"><?php if ($breadcrumb): print $breadcrumb; endif;?></div><?php endif; ?>
       <section id="post-content" role="main">
         <?php print $messages; ?>
         <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>

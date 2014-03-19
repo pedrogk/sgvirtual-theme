@@ -7,7 +7,7 @@
 /**
  * Implements hook_html_head_alter().
  */
-function responsive_green_html_head_alter(&$head_elements) {
+function sgvirtual_html_head_alter(&$head_elements) {
   $head_elements['system_meta_content_type']['#attributes'] = array(
     'charset' => 'utf-8'
   );
@@ -16,7 +16,7 @@ function responsive_green_html_head_alter(&$head_elements) {
 /**
  * Insert themed breadcrumb page navigation at top of the node content.
  */
-function responsive_green_breadcrumb($variables) {
+function sgvirtual_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
     // Use CSS to hide titile .element-invisible.
@@ -31,7 +31,7 @@ function responsive_green_breadcrumb($variables) {
 /**
  * Override or insert variables into the page template.
  */
-function responsive_green_preprocess_page(&$vars) {
+function sgvirtual_preprocess_page(&$vars) {
   if (isset($vars['main_menu'])) {
     $vars['main_menu'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],
@@ -70,20 +70,20 @@ function responsive_green_preprocess_page(&$vars) {
   else {
     $vars['main_menu_tree'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
   }
-  $vars['twitter'] = theme_get_setting('twitter', 'responsive_green');
-  $vars['facebook'] = theme_get_setting('facebook', 'responsive_green');
-  $vars['googleplus'] = theme_get_setting('googleplus', 'responsive_green');
-  $vars['linkedin'] = theme_get_setting('linkedin', 'responsive_green');
-  $vars['theme_path_social'] = base_path() . drupal_get_path('theme', 'responsive_green');
-  $vars['display'] = theme_get_setting('display', 'responsive_green');
-  $vars['img1'] = base_path() . drupal_get_path('theme', 'responsive_green') . '/images/slide-image-1.jpg';
-  $vars['img2'] = base_path() . drupal_get_path('theme', 'responsive_green') . '/images/slide-image-2.jpg';
-  $vars['img3'] = base_path() . drupal_get_path('theme', 'responsive_green') . '/images/slide-image-3.jpg';
+  $vars['twitter'] = theme_get_setting('twitter', 'sgvirtual');
+  $vars['facebook'] = theme_get_setting('facebook', 'sgvirtual');
+  $vars['googleplus'] = theme_get_setting('googleplus', 'sgvirtual');
+  $vars['linkedin'] = theme_get_setting('linkedin', 'sgvirtual');
+  $vars['theme_path_social'] = base_path() . drupal_get_path('theme', 'sgvirtual');
+  $vars['display'] = theme_get_setting('display', 'sgvirtual');
+  $vars['img1'] = base_path() . drupal_get_path('theme', 'sgvirtual') . '/images/slide-image-1.jpg';
+  $vars['img2'] = base_path() . drupal_get_path('theme', 'sgvirtual') . '/images/slide-image-2.jpg';
+  $vars['img3'] = base_path() . drupal_get_path('theme', 'sgvirtual') . '/images/slide-image-3.jpg';
 }
 /**
  * Add Google Fonts.
  */
-function responsive_green_preprocess_html(&$variables) {
+function sgvirtual_preprocess_html(&$variables) {
   drupal_add_css('http://fonts.googleapis.com/css?family=Vollkorn', array('type' => 'external'));
   drupal_add_css('http://fonts.googleapis.com/css?family=Dancing+Script', array('type' => 'external'));
 }
@@ -91,7 +91,7 @@ function responsive_green_preprocess_html(&$variables) {
 /**
  * Duplicate of theme_menu_local_tasks() but adds clearfix to tabs.
  */
-function responsive_green_menu_local_tasks(&$variables) {
+function sgvirtual_menu_local_tasks(&$variables) {
   $output = '';
 
   if (!empty($variables['primary'])) {
@@ -112,14 +112,14 @@ function responsive_green_menu_local_tasks(&$variables) {
 /**
  * Override or insert variables into the node template.
  */
-function responsive_green_preprocess_node(&$variables) {
+function sgvirtual_preprocess_node(&$variables) {
   $node = $variables['node'];
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
   }
 }
 
-function responsive_green_page_alter($page) {
+function sgvirtual_page_alter($page) {
   $viewport = array(
     '#type' => 'html_tag',
     '#tag' => 'meta',
