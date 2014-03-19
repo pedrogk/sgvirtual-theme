@@ -67,24 +67,14 @@
 
 <div id="header_wrapper">
   <header id="header" role="banner">
-    <?php if ($logo): ?><div id="logo"><a href="/sgvirtual" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
+    <?php if ($logo): ?>
+      <div id="logo"><a href="/sgvirtual" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
     <?php endif; ?>
-    <?php if ($site_slogan): ?>
-		<h1 id="site-title"><div id="site-description"><?php print $site_slogan; ?></div></h1>
-    <?php endif; ?>
-      <?php if ($display): ?>
-         <div id="socialbar">
-            <ul class="social">
-            <?php $options['attributes'] = array('target' => '_blank'); ?>
-            <?php if ($facebook): ?><li class="fb"><?php print l(t(''), $facebook, $options); ?></li> <?php endif; ?>
-            <?php if ($twitter): ?><li class="tw"><?php print l(t(''), $twitter, $options); ?></li> <?php endif; ?>
-            <?php if ($linkedin): ?><li class="ln"><?php print l(t(''), $linkedin, $options); ?></li> <?php endif; ?>
-            </ul>
-          </div>
-        <?php endif; ?>
-        </div>
+    <?php if ($page['sgvirtual_info']): ?>
+      <div id="event-info">
+        <?php print render($page['sgvirtual_info']); ?>
       </div>
-    <div class="clear"></div>
+    <?php endif; ?>
   </header>
 <?php if ($page['sgvirtual_menu']): ?>
   <div class="menu_wrapper">

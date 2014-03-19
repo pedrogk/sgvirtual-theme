@@ -18,15 +18,10 @@ scripts[] = js/slide.js
 ;----------------------------------------------------
 regions[sidebar_first]  = First Sidebar
 regions[sidebar_second] = Second Sidebar
-regions[top_first]      = Header First
-regions[top_second]     = Header Second
-regions[top_third]      = Header Third
 regions[sgvirtual_menu] = SG Virtual menu
+regions[sgvirtual_info] = SG Virtual info 
 regions[content]        = Content
 regions[content_top]    = Content Top
-regions[footer_first]   = Bottom First
-regions[footer_second]  = Bottom Second
-regions[footer_third]   = Bottom Third
 regions[footer]         = Footer
 
 ; FEATURES
