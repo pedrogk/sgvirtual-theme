@@ -324,7 +324,7 @@ audio {
 #header_wrapper {
   position: relative;
   margin: 0 auto;
-  background-color: #c0c0c0;
+  background-color: #d6d6d6;
 }
 
 #header {
@@ -350,6 +350,7 @@ audio {
 
 #event-info {
     float: right;
+    padding-top: 15px;
 }
 
 #site-title a,
