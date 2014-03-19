@@ -23,6 +23,10 @@ regions[sgvirtual_info] = SG Virtual info
 regions[content]        = Content
 regions[content_top]    = Content Top
 regions[footer]         = Footer
+regions[footer_first]   = Bottom First
+regions[footer_second]  = Bottom Second
+regions[footer_third]   = Bottom Third
+
 
 ; FEATURES
 ;----------------------------------------------------
