@@ -86,15 +86,18 @@
       </div>
     <div class="clear"></div>
   </header>
+<?php if ($page['sgvirtual_menu']): ?>
   <div class="menu_wrapper">
       <nav id="main-menu"  role="navigation">
         <a class="nav-toggle" href="#">Navigation</a>
         <div class="menu-navigation-container">
-          <?php print drupal_render($main_menu_tree); ?>
+            <?php print render($page['sgvirtual_menu']); ?>
+        </div> 
         <div class="clear"></div>
       </nav><!-- end main-menu -->
   </div>
-</div>
+<?php endif; ?>
+</div> <!-- header_wrapper -->
 <div id="container">
     <?php if ($is_front): ?>
      <?php if ($display): ?>
