@@ -67,7 +67,7 @@
 
 <div id="header_wrapper">
   <header id="header" role="banner">
-    <?php if ($logo): ?><div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
+    <?php if ($logo): ?><div id="logo"><a href="/sgvirtual" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div>
     <?php endif; ?>
     <?php if ($site_slogan): ?>
 		<h1 id="site-title"><div id="site-description"><?php print $site_slogan; ?></div></h1>

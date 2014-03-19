@@ -68,14 +68,14 @@ table {
 */
 
 body {
-  color: #333333;
+  color: #2c2c2c;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.5em;
 }
 
 a {
-  color: #00a99d;
+  color: #80cc28;
   text-decoration: none;
 }
 
@@ -91,19 +91,19 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 h5 {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 h6 {
@@ -111,7 +111,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 table {
@@ -324,6 +324,7 @@ audio {
 #header_wrapper {
   position: relative;
   margin: 0 auto;
+  background-color: #c0c0c0;
 }
 
 #header {
@@ -332,12 +333,12 @@ audio {
 }
 
 .menu_wrapper {
-  background-color: #00a99d;
-  border-bottom: 0 solid #00a99d;
-  border-top: 0 solid #00a99d;
+  background-color: #80cc28;
+  border-bottom: 0 solid #80cc28;
+  border-top: 0 solid #80cc28;
   display: block;
-  margin-bottom: 15px;
-  padding: 13px 0 14px;
+  margin-bottom: 10px;
+  padding: 10px 0;
   position: relative;
   z-index: 99;
 }
@@ -347,9 +348,13 @@ audio {
   margin: 15px 10px;
 }
 
+#event-info {
+    float: right;
+}
+
 #site-title a,
 #site-description {
-  color: #00a99d;
+  color: #80cc28;
   font-weight: 300;
 }
 
@@ -371,7 +376,7 @@ audio {
 
 #site-description {
   clear: both;
-  color: #00a99d;
+  color: #80cc28;
   float: left;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -405,7 +410,7 @@ audio {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #main-menu ul li:first-child {
@@ -414,19 +419,18 @@ audio {
 
 #main-menu a {
   border-radius: 5px 5px 5px 5px;
-  color: #343434;
+  color: #ffffff;
   display: block;
-  padding: 8px 12px;
+  padding: 8px 15px;
   text-align: center;
   text-decoration: none;
-  text-transform: capitalize;
 }
 
 #main-menu a:hover,
 #main-menu li > a.active,
 #main-menu li > a.active-trail {
   background: none repeat scroll 0 0 #ffffff;
-  color: #00a99d;
+  color: #80cc28;
   text-decoration: none;
 }
 
@@ -508,8 +512,8 @@ audio {
 }
 
 #main-menu li li a  {
-  background: none repeat scroll 0 0 #00a99d;
-  border: 1px solid #343434;
+  background: none repeat scroll 0 0 #80cc28;
+  border: 1px solid #a0a0a0;
   color: #ffffff;
   font-size: 14px;
   margin: 0;
@@ -517,10 +521,11 @@ audio {
   overflow: hidden;
   padding: 4% 5%;
   text-align: left;
+  text-transform: none;
 }
 
 #main-menu li li a:hover {
-  background: #343434;
+  background: #a0a0a0;
   color: #fff;
 }
 
@@ -635,7 +640,7 @@ audio {
 
 .flex-control-nav li a.flex-active,
 .flex-control-nav li a:hover  {
-  background: none repeat scroll 0 0 #00a99d;
+  background: none repeat scroll 0 0 #80cc28;
   color: #c24050;
 }
 .flex-direction-nav {
@@ -765,18 +770,13 @@ body.sidebar-second #sidebar-second {
   margin: 20px 0;
 }
 
-.node h2.title, .page-title {
-  color: #555555;
-  font-size: 20px;
+.page-title {
 }
 
-.node h2.title a{
-  color: #000;
+.node h2.title a {
+  color: #2c2c2c;
 }
 
-.block {
-  margin-bottom: 1%;
-}
 
 .block > h2{
   border-bottom: 1px solid #ccc;
@@ -825,7 +825,7 @@ ul.links {
 .links li a {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  background: #00a99d;
+  background: #80cc28;
   border-radius: 4px;
   color: #fff;
   font-weight: normal;
@@ -1517,7 +1517,7 @@ ol.search-results {
 #footer {
   clear: both;
   color: rgb(34, 34, 34);
-  background: none repeat scroll 0 0 #00a99d;
+  background: none repeat scroll 0 0 #80cc28;
   border-top: 1px solid #cfd7db;
 }
 
@@ -1587,7 +1587,7 @@ ol.search-results {
   margin: 0 auto;
 }
 #foot .menu li .active {
-  color:#00a99d;
+  color:#80cc28;
 }
 #foot .menu li a {
   color:#ffffff;
