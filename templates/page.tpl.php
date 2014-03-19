@@ -75,6 +75,7 @@
         <?php print render($page['sgvirtual_info']); ?>
       </div>
     <?php endif; ?>
+    <div class="clear"></div>
   </header>
 <?php if ($page['sgvirtual_menu']): ?>
   <div class="menu_wrapper">
@@ -188,8 +189,7 @@
         <?php print render($page['footer']) ?>
       </div>
    <?php endif; ?>
-    <div id="copyright">
-     <p class="copyright"><?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <?php print $site_name; ?> </p> <p class="credits"> <?php print t('Theme by'); ?>  <a href="http://about.me/ankithinglajia" target="_blank">Ankit Hinglajia</a></p>
+    <p>SG Virtual es otro fantástico evento de <a href="http://sg.com.mx">Software Guru</a>
     <div class="clear"></div>
     </div>
   </div>
