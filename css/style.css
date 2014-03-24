@@ -304,10 +304,7 @@ audio {
 }
 
 .content a img {
-  padding: 5px;
-  box-shadow: 0 0 3px #eee;
-  background: #fff;
-  border: #eee 1px solid;
+
 }
 
 .content a:hover img {
